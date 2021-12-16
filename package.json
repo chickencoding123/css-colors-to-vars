@@ -1,0 +1,31 @@
+{
+  "name": "bootstrap-css-vars",
+  "version": "1.0.0",
+  "description": "Automatically converts bootstrap CSS to use CSS variables",
+  "main": "index.js",
+  "scripts": {
+    "remap": "node index.js --remap",
+    "test": "jasmine tests/**/*.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://www.gihub.com/IRoninCoder/bootstrap-css-vars"
+  },
+  "keywords": [
+    "css",
+    "variables",
+    "convert",
+    "color",
+    "colors"
+  ],
+  "author": "IRoninCoder",
+  "license": "MIT",
+  "dependencies": {
+    "css": "^3.0.0",
+    "css-color-function": "^1.3.3"
+  },
+  "devDependencies": {
+    "eslint": "^7.19.0",
+    "jasmine": "^3.7.0"
+  }
+}

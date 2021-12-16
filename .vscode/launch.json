@@ -1,0 +1,20 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch via transpile",
+      "request": "launch",
+      "runtimeArgs": [
+        "run-script",
+        "refactor"
+      ],
+      "runtimeExecutable": "npm",
+      "console": "integratedTerminal",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "type": "pwa-node"
+    }
+  ],
+  "compounds": []
+}
