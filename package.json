@@ -23,6 +23,10 @@
   ],
   "author": "IRoninCoder",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IRoninCoder/css-colors-to-vars/issues"
+  },
+  "homepage": "https://github.com/IRoninCoder/css-colors-to-vars",
   "dependencies": {
     "css": "^3.0.0",
     "css-color-function": "^1.3.3",
