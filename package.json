@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "Automatically converts bootstrap CSS to use CSS variables",
   "main": "index.js",
+  "bin": {
+    "remap-cli": "remap-cli.js"
+  },
   "scripts": {
-    "remap": "node index.js --remap",
+    "cli": "node remap-cli.js",
     "test": "jasmine tests/**/*.spec.js"
   },
   "repository": {
@@ -22,7 +25,8 @@
   "license": "MIT",
   "dependencies": {
     "css": "^3.0.0",
-    "css-color-function": "^1.3.3"
+    "css-color-function": "^1.3.3",
+    "yargs": "^17.3.0"
   },
   "devDependencies": {
     "eslint": "^7.19.0",
