@@ -1,7 +1,7 @@
 {
-  "name": "bootstrap-css-vars",
+  "name": "css-colors-to-vars",
   "version": "1.0.0",
-  "description": "Automatically converts bootstrap CSS to use CSS variables",
+  "description": "Automatically converts raw color values in CSS files to use CSS variables instead",
   "main": "index.js",
   "bin": {
     "remap-cli": "remap-cli.js"
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://www.gihub.com/IRoninCoder/bootstrap-css-vars"
+    "url": "https://github.com/IRoninCoder/css-colors-to-vars"
   },
   "keywords": [
     "css",
