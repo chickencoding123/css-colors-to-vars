@@ -26,7 +26,16 @@ npx remap <input CSS file path> <output CSS file path>
 yarn remap <input CSS file path> <output CSS file path>
 # e.g. npm run remap tests/fixtures/bootstrap-v5.0.2.css dist/bootstrap.css
 ```
-Which will give you a remaped version with all colors saved under the `:root`
+To use the api:
+```js
+const remap = require('css-colors-to-vars')
+// or
+import remap from 'css-colors-to-vars'
+// then
+const output = remap('tests/fixtures/bootstrap-v5.0.2.css')
+
+```
+Both cli and api will give you a remaped version with all colors saved under the `:root`
 
 ## Why?
 Because someone may find this useful. Perhaps accelarate their rewrite process when working on older CSS files. Maybe you love to use [Bootstrap](https://github.com/twbs/bootstrap), but need a greater control over the color theme because you'd want to allow your users to choose their own colors and save their preferences in their account.
