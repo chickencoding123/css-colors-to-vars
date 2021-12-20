@@ -1,6 +1,6 @@
 {
   "name": "css-colors-to-vars",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Automatically converts raw color values in CSS files to use CSS variables instead",
   "main": "index.js",
   "bin": {
