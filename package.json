@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/IRoninCoder/css-colors-to-vars"
+    "url": "https://github.com/chickencoding123/css-colors-to-vars"
   },
   "keywords": [
     "css",
@@ -21,12 +21,12 @@
     "color",
     "colors"
   ],
-  "author": "IRoninCoder",
+  "author": "chickencoding123",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/IRoninCoder/css-colors-to-vars/issues"
+    "url": "https://github.com/chickencoding123/css-colors-to-vars/issues"
   },
-  "homepage": "https://github.com/IRoninCoder/css-colors-to-vars",
+  "homepage": "https://github.com/chickencoding123/css-colors-to-vars",
   "dependencies": {
     "css": "^3.0.0",
     "css-color-function": "^1.3.3",

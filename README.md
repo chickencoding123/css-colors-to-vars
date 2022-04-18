@@ -5,7 +5,7 @@ css-colors-to-vars
 
 Remap arbitrary CSS colors to CSS variables. Useful for libraries and custom CSS files.
 
-[![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/IRoninCoder/css-colors-to-vars/blob/master/LICENSE)
+[![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/chickencoding123/css-colors-to-vars/blob/master/LICENSE) [![npm](https://img.shields.io/npm/v/css-colors-to-vars)](https://www.npmjs.com/package/css-colors-to-vars) 
 
 </div>
 
