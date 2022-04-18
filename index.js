@@ -33,9 +33,6 @@ const findNewVariableName = (rule, declaration, match, root) => {
 }
 
 const parseRoot = (rule, root) => {
-  root.type = rule.type
-  root.selectors = rule.selectors
-
   for (let j = 0; j < rule.declarations.length; j++) {
     const declaration = rule.declarations[j]
     const matches = declaration.value.match(valueRegex)
@@ -104,7 +101,7 @@ const remap = (uri) => {
   const cssContent = fs.readFileSync(resolvedPath).toString('utf-8')
   const parsed = css.parse(cssContent)
   const rulesWithColors = []
-  const root = { declarations: [], vars: {} }
+  const root = { type: 'rule', selectors: [':root'], declarations: [], vars: {} }
 
   if (!parsed.stylesheet || (parsed.stylesheet.parsingErrors && parsed.stylesheet.parsingErrors.length > 0)) {
     console.error(!parsed.stylesheet ? 'No stylesheet retuned from parser' : parsed.stylesheet.parsingErrors)

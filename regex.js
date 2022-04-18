@@ -19,7 +19,7 @@ const colorAlias = ['black', 'silver', 'gray', 'white', 'maroon', 'red', 'purple
 const hex1 = /#(?:[0-9a-f]{2}){2,4}/
 const hex2 = /#[0-9a-f]{3}/
 const rgbHsla = /(rgb|hsl)a?[(](-?\d+%?[,\s]+){2,3}\s*[\d.]+%?[)]/
-const valueRegex = new RegExp(`${hex1.source}|${hex2.source}|${rgbHsla.source}|${colorAlias.join('(\\s|;)|')}`, 'gi')
+const valueRegex = new RegExp(`${hex1.source}|${hex2.source}|${rgbHsla.source}|${colorAlias.join('(?=\\s|;)|')}`, 'gi')
 let pseudosRegex = new RegExp([
   /(?:(\w|-|\.)+):?:focus/.source,
   /(?:(\w|-|\.)+):?:before/.source,

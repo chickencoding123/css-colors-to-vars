@@ -1,4 +1,4 @@
-const remap = require('../remap.js')
+const remap = require('../index.js')
 
 describe('converter tests', () => {
   it('can remap bootstrap color values to use CSS variables', () => {
@@ -133,6 +133,27 @@ describe('converter tests', () => {
   --shadow-lg-box-shadow: rgba(0, 0, 0, 0.175);
   --text-black-50-color: rgba(0, 0, 0, 0.5);
   --text-white-50-color: rgba(255, 255, 255, 0.5);
+}`)
+  })
+
+  it('can remap color values when file does not contain a :root element', () => {
+    const remaped = remap('tests/fixtures/from-issue-1.css')
+    expect(remaped).toContain(
+      // eslint-disable-next-line indent
+`:root {
+  --navigator-toolbox-background: #323234;
+  --navigator-toolbox-color: white;
+  --zotero-toolbar-border-bottom: #1d1d1d;
+  --label-color: black;
+  --input-background: #474749;
+  --tag-selector-item-hover-background: #bbcef1;
+  --row-hover-background: #7e7e7e;
+  --tabs-border: red;
+  --tab-not-border-top: #0a84ff;
+  --tab-not-border-left: rgba(127, 127, 127, 0.2);
+  --tab-color: #eee;
+  --tab-hover-background: #e0e8f6;
+  --retraction-details-background: #7f0000;
 }`)
   })
 })

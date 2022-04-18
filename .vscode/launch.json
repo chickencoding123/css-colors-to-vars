@@ -2,11 +2,11 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Launch via transpile",
+      "name": "Launch Tests",
       "request": "launch",
       "runtimeArgs": [
         "run-script",
-        "refactor"
+        "test"
       ],
       "runtimeExecutable": "npm",
       "console": "integratedTerminal",
